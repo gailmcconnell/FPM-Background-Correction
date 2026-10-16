@@ -146,7 +146,7 @@ The method is intended for post-reconstruction image correction and does not rep
 
 If you use this software in published research, please cite the associated manuscript:
 
-McConnell et al. *A method for correcting background non-uniformity while preserving specimen-level information in Fourier ptychographic microscopy images.* Biorxiv
+Copeland et al. *A method for correcting background non-uniformity while preserving specimen-level information in Fourier ptychographic microscopy images.* Biorxiv
 
 ## Licence
 
