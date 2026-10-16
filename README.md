@@ -1,6 +1,6 @@
 # FPM Background Correction
 
-**Background correction for Fourier ptychographic microscopy images while preserving specimen-level information**
+**A post-reconstruction background correction method for Fourier ptychographic microscopy images while preserving specimen-level information**
 
 ## Overview
 
