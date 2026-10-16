@@ -51,7 +51,7 @@ conda install -c conda-forge numpy scipy imageio pillow tifffile
 
 Download the Python script:
 
-`FFPMbackgroundcorr.py`
+`FPMbackgroundcorr.py`
 
 Open the script in Spyder, VS Code, PyCharm or another Python environment.
 
@@ -133,7 +133,7 @@ SAVE_BACKGROUND_ESTIMATE = False
 
 The script checks that protected foreground pixels remain unchanged during background correction, before conversion to the output data type.
 
-The original numerical data type is retained when saving the corrected image. However, the current implementation uses floating-point working arrays, so exact numerical identity in the saved output is not guaranteed for every supported data type.
+For supported lossless output formats, the script retains the original numerical data type. However, processing uses 32-bit floating-point working arrays so exact numerical identity in the saved output is not guaranteed for every input data type. JPEG output is lossy and may involve conversion to 8-bit data: TIFF is recommended for quantitative analysis.
 
 The method is designed to preserve specimen information identified by the foreground mask. Structures that are not detected as foreground may be modified during background replacement.
 
@@ -155,6 +155,6 @@ This software is distributed under the MIT License. See the `LICENSE` file for d
 ## Author
 
 Gail McConnell  
-Centre for Biophotonics
+Centre for Biophotonics  
 Strathclyde Institute of Pharmacy and Biomedical Sciences  
 University of Strathclyde, Glasgow, UK
