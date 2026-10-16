@@ -25,7 +25,7 @@ Foreground detection is performed on a grayscale representation of the input ima
 
 ## Requirements
 
-Python 3.10 or later is recommended.
+Python 3.10 or later is required.
 
 Required packages:
 
@@ -51,7 +51,7 @@ conda install -c conda-forge numpy scipy imageio pillow tifffile
 
 Download the Python script:
 
-`FFPMbackgroundcorr v1.2.py`
+`FFPMbackgroundcorr.py`
 
 Open the script in Spyder, VS Code, PyCharm or another Python environment.
 
@@ -76,7 +76,7 @@ The script automatically generates a foreground protection mask, performs backgr
 - PNG (`.png`)
 - JPEG (`.jpg`, `.jpeg`)
 
-Grayscale, RGB and RGBA images are supported. 
+Grayscale, RGB and RGBA images are supported. Multidimensional images are not supported.
 
 
 ## Parameters
