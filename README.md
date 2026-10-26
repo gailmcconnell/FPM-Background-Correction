@@ -12,6 +12,8 @@ The method reduces background non-uniformity while preserving specimen informati
 
 The method is applicable to both amplitude and phase reconstructions and has been evaluated using biological specimens and silica microspheres.
 
+Two versions are included in this repository - a .jar for use with ImageJ/FIJI (install and use), and a Python version for easy editing.
+
 ## Method
 
 The correction procedure consists of four stages:
