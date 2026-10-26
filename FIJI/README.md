@@ -18,13 +18,13 @@ Select File → New → Script.
 
 Choose Groovy as the scripting language.
 
-Open FPM_Background_Homogenisation.groovy in the script editor.
+Open FPM_Background_Correction.groovy in the script editor.
 
 Click Run.
 
 Select the reconstructed FPM image to process.
 
-Adjust the detection thresholds and dilation parameter if required.
+Adjust the detection thresholds and dilation parameter if required (default values are a good place to start!).
 
 Inspect the corrected image and optional protected specimen mask.
 
@@ -44,6 +44,6 @@ Lower thresholds generally protect more image pixels.
 
 # Notes
 
-This implementation is optimised for large greyscale images and uses sampled statistics to improve processing speed.
+This implementation is optimised for large greyscale images.
 
 The method modifies only pixels classified as background. Users should inspect the protected specimen mask to confirm that relevant specimen features have been identified correctly.
