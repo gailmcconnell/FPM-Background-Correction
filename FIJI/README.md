@@ -1,6 +1,6 @@
 # Fiji/ImageJ implementation
 
-This directory contains a Java plugin (`FPM_Background_Correction.jar`) implementing the FPM background correction method for use directly within Fiji/ImageJ.
+This directory contains a Java plugin (`FPM_Background_Correction.jar`) implementing the FPM background correction method for use directly within ImageJ/FIJI.
 
 The plugin operates on a single reconstructed FPM amplitude or phase image. It identifies and protects specimen-containing regions before replacing the surrounding background with a uniform median intensity.
 
