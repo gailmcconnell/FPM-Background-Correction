@@ -1,48 +1,39 @@
-# FIJI/ImageJ implementation
+# Fiji/ImageJ implementation
 
-This directory contains a Groovy implementation of the FPM background correction method for use directly within Fiji/ImageJ.
+This directory contains a Java plugin (`FPM_Background_Correction.jar`) implementing the FPM background correction method for use directly within Fiji/ImageJ.
 
-The script operates on a single reconstructed FPM amplitude or phase image. It identifies and protects specimen-containing regions before replacing the surrounding background with a uniform median intensity.
+The plugin operates on a single reconstructed FPM amplitude or phase image. It identifies and protects specimen-containing regions before replacing the surrounding background with a uniform median intensity.
 
-# Requirements
+## Requirements
 
-Fiji with Groovy scripting support
+- Fiji
+- Single-plane 8-bit, 16-bit or 32-bit greyscale image
 
-Single-plane 8-bit, 16-bit or 32-bit greyscale image
+## Installation
 
-# Usage
+1. Download `FPM_Background_Correction.jar`.
+2. Copy the JAR file into the `plugins` folder within your Fiji installation.
+3. Restart Fiji.
 
-Launch Fiji.
+## Usage
 
-Select File → New → Script.
+1. Launch Fiji.
+2. Select **Plugins → FPM Background Correction**.
+3. Open the reconstructed FPM image to process.
+4. Adjust the detection thresholds and dilation parameter if required (default values are a good place to start!).
+5. Inspect the corrected image and optional protected specimen mask.
+6. Save the corrected image as a TIFF.
 
-Choose Groovy as the scripting language.
+## Parameters
 
-Open FPM_Background_Correction.groovy in the script editor.
-
-Click Run.
-
-Select the reconstructed FPM image to process.
-
-Adjust the detection thresholds and dilation parameter if required (default values are a good place to start!).
-
-Inspect the corrected image and optional protected specimen mask.
-
-Save the corrected image as a TIFF.
-
-# Parameters
-
-Dilation pixels: expands the protected specimen mask (default 4).
-
-Local contrast threshold: identifies local specimen detail (default 3.5).
-
-Gradient threshold: identifies specimen edges (default 4.0).
-
-Darkness threshold: identifies locally darker specimen structures (default 3.0).
+- **Dilation pixels:** expands the protected specimen mask (default 4).
+- **Local contrast threshold:** identifies local specimen detail (default 3.5).
+- **Gradient threshold:** identifies specimen edges (default 4.0).
+- **Darkness threshold:** identifies locally darker specimen structures (default 3.0).
 
 Lower thresholds generally protect more image pixels.
 
-# Notes
+## Notes
 
 This implementation is optimised for large greyscale images.
 
